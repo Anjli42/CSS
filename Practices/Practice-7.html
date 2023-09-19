@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors - Child Selector</title>
+    <style>
+        .Parent>p {
+            color: red;
+            background-color: lavender;
+        }
+
+        .Child>p {
+            color: rgb(5, 112, 19);
+            background-color: bisque;
+        }
+
+        h1 {
+            text-align: center;
+            color: purple;
+            background-color: coral;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Combinator Selectors - Child Selector (>)</h1>
+    <div class="Parent">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+
+        <div class="Child">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quae.</p>
+    </div>
+</body>
+
+</html>

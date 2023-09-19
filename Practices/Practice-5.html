@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Selectors - Attribute Selector</title>
+    <style>
+        div[class*="box"] {
+            width: 200px;
+            height: 200px;
+            border: 8px dashed black;
+            margin: 10px auto;
+            color: aliceblue;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+            color: blue;
+            background-color:darkseagreen;
+        }
+
+        .box-1{
+            background-color: rgb(240, 104, 104);
+        }
+        .box-2{
+            background-color: rgb(127, 108, 236);
+        }
+        .box-3{
+            background-color: rgb(237, 109, 233);
+        }
+        .box-4{
+            background-color: rgb(85, 246, 246);
+            color: rgb(107, 5, 5) !important;
+        }
+
+        .box-5{
+            background-color: rgb(84, 241, 107);
+        }
+
+        .box-6{
+            background-color: rgb(243, 138, 82);
+        }
+
+        .box-7{
+            background-color: rgb(166, 52, 63);
+        }
+
+        .box-8{
+            background-color: rgb(75, 116, 36);
+            color: rgb(2, 41, 43) !important;
+        }
+        .container{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Basic Selectors - Attribute Selector</h1>
+    <div class="container">
+        <div class="box-1">Box-1</div>
+        <div class="box-2">Box-2</div>
+        <div class="box-3">Box-3</div>
+        <div class="box-4">Box-4</div>
+    </div>
+    <div class="container">
+        <div class="box-5">Box-5</div>
+        <div class="box-6">Box-6</div>
+        <div class="box-7">Box-7</div>
+        <div class="box-8">Box-8</div>
+    </div>
+</body>
+
+</html>
