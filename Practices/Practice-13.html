@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div[class*="background"] {
+            margin: 15px;
+            height: 400px;
+            color: rgb(15, 4, 4);
+            border: 8px dashed black;
+            font-size: larger;
+        }
+
+        .background-clip-1 {
+            background-image: url(..//Images/1.jpg);
+            background-clip: border-box;
+            padding: 100px;
+        }
+
+        .background-clip-2 {
+            background-image: url(..//Images/1.jpg);
+            background-clip: padding-box;
+            padding: 100px;
+        }
+
+        .background-clip-3 {
+            background-image: url(..//Images/1.jpg);
+            background-clip: content-box;
+            padding: 100px;
+        }
+
+        .background-attachment-1 {
+            background-image: url(..//Images/2.jpg);
+            background-attachment: fixed;
+        }
+
+        .background-attachment-2 {
+            background-image: url(..//Images/2.jpg);
+            background-attachment: scroll;
+        }
+
+        .background-color {
+            background-color: chocolate;
+        }
+
+        .background-image {
+            background-image: url(..//Images/3.jpg);
+        }
+
+        .background-origin-1 {
+            background-image: url(..//Images/4.jpg);
+            padding: 100px;
+            background-origin: border-box;
+        }
+
+        .background-origin-2 {
+            background-image: url(..//Images/4.jpg);
+            padding: 100px;
+            background-origin: padding-box;
+        }
+
+        .background-origin-3 {
+            background-image: url(..//Images/4.jpg);
+            padding: 100px;
+            background-origin: content-box;
+        }
+
+        .background-position-1 {
+            background-image: url(..//Images/5.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 20px;
+            background-size: 300px;
+        }
+
+        .background-position-2 {
+            background-image: url(..//Images/5.jpg);
+            background-position: top;
+            background-repeat: no-repeat;
+            padding: 20px;
+            background-size: 300px;
+        }
+
+        .background-position-3 {
+            background-image: url(..//Images/5.jpg);
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size: 300px;
+            padding: 20px;
+        }
+
+        .background-position-4 {
+            background-image: url(..//Images/5.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: 300px;
+            padding: 20px;
+        }
+
+        .background-position-5 {
+            background-image: url(..//Images/5.jpg);
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 300px;
+            padding: 20px;
+        }
+
+        .background-repeat-1 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: repeat;
+        }
+        .background-repeat-2 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: no-repeat;
+        }
+        .background-repeat-3 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: repeat-x;
+        }
+        .background-repeat-4 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: repeat-y;
+        }
+        .background-repeat-5 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: round;
+        }
+        .background-repeat-6 {
+            background-image: url(..//Images/6.jpg);
+            background-size: 200px;
+            background-repeat: space;
+        }
+
+        .background-size-1 {
+            background-image: url(..//Images/1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .background-size-2 {
+            background-image: url(..//Images/1.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .background-size-3 {
+            background-image: url(..//Images/1.jpg);
+            background-repeat: no-repeat;
+            background-size: 400px;
+        }
+        .background-size-4 {
+            background-image: url(..//Images/1.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .background-shorthand {
+            background: url(..//Images/5.jpg)no-repeat border-box center center/cover;
+        }
+
+        .background-multiple {
+            background-image: url(..//Images/2.jpg), url(..//Images/3.jpg), url(..//Images/4.jpg);
+            background-repeat: repeat-x, repeat-y, no-repeat;
+            background-size: 150px, 150px, cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Background Property in CSS :</h1>
+    <h3>background-clip</h3>
+    <div class="background-clip-1">background-clip = border-box</div>
+    <div class="background-clip-2">background-clip = padding-box</div>
+    <div class="background-clip-3">background-clip = content-box</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-attachment</h3>
+    <div class="background-attachment-1">background-attachment = Fixed</div>
+    <div class="background-attachment-2">background-attachment = Scroll</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-color</h3>
+    <div class="background-color">background-color</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-image</h3>
+    <div class="background-image">background-image</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-origin</h3>
+    <div class="background-origin-1">background-origin = border-box</div>
+    <div class="background-origin-2">background-origin = padding-box</div>
+    <div class="background-origin-3">background-origin = content-box</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-position</h3>
+    <div class="background-position-1">background-position = center</div>
+    <div class="background-position-2">background-position = top</div>
+    <div class="background-position-3">background-position = left</div>
+    <div class="background-position-4">background-position = right</div>
+    <div class="background-position-5">background-position = bottom</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-repeat</h3>
+    <div class="background-repeat-1">background-repeat = repeat</div>
+    <div class="background-repeat-2">background-repeat = no-repeat</div>
+    <div class="background-repeat-3">background-repeat = repeat-x</div>
+    <div class="background-repeat-4">background-repeat = repeat-y</div>
+    <div class="background-repeat-5">background-repeat = round</div>
+    <div class="background-repeat-6">background-repeat = space</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-size</h3>
+    <div class="background-size-1">background-size = cover</div>
+    <div class="background-size-2">background-size = contain</div>
+    <div class="background-size-3">background-size = 400px</div>
+    <div class="background-size-4">background-size = 100% 100%</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-shorthand</h3>
+    <div class="background-shorthand">background-shorthand</div>
+
+    <hr>
+    <hr>
+    <hr>
+
+    <h3>background-multiple</h3>
+    <div class="background-multiple">background-multiple</div>
+</body>
+
+</html>
